@@ -1,0 +1,128 @@
+---
+title: "Praktikum 04"
+name: "Füge deinen Namen hizu"
+date: "Füge ein Datum hinzu"
+output: 
+  html_document: 
+    toc: true
+    toc_float: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# Lade Packages
+
+```{r}
+
+library(palmerpenguins)
+
+```
+
+# Übung 1
+
+In den nächsten Code-chunks habe ich bereits Code für dich vorbereitet. Beschreibe was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
+
+**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+
+```{r}
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm)) + 
+  geom_point() +
+  facet_grid(species ~ sex)
+
+```
+
+**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+
+```{r}
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm)) + 
+  geom_point() +
+  facet_grid(sex ~ species)
+
+```
+
+**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+
+```{r}
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm)) + 
+  geom_point() +
+  facet_wrap(~ species)
+
+```
+
+**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+
+```{r}
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm)) + 
+  geom_point() +
+  facet_grid(. ~ species)
+
+
+```
+
+**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+
+```{r}
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm)) + 
+  geom_point() +
+  facet_wrap(~ species)
+
+```
+
+**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+
+```{r}
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm)) + 
+  geom_point() +
+  facet_wrap(~ species, ncol = 2)
+
+```
+
+# Übung 2
+
+Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit meinen Anweisungen ausfüllen.
+
+1. Nutze den `penguins` Datensatz innerhalb der `ggplot()` Funktion 
+2. Ordne die Variable 'island' der x-Achse zu 
+3. Ordne die Variable 'species' einer Farbskalierung zu
+4. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
+7. Entferne die Legende (**Tipp:** Nutze eine Suchmaschine deiner Wahl "How to remove the legend in ggplot2 tidyverse")
+8. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst
+9. Führe den Code-chunk aus
+
+
+```{r, eval=FALSE}
+
+ggplot(___, 
+       ___(x = ___,
+           ___ = species)) +
+  geom____() +
+  facet_grid(___ ~ ___) +
+  scale_fill_brewer(type = "qual", palette = "Set2") +
+  ___(___ = "none")
+
+```
+
+
+# Git commit / Git push 
+
+Du kannst jederzeit einen Git commit durchführen und deine Änderungen auf GitHub pushen. Mache dies spätestens am Ende dieses Praktikums nachdem du sichergestellt hast, dass deine R Markdown Datei zu einer HTML Datei rendert. 
+
+**Hinweis:** Der Begriff Rendern (Engl. to render; zu Deutsch: Bildsynthese) bezeichnet die Erstellung einer Grafik aus Rohdaten (wie z. B. Geoinformationen) oder einer Skizze. [Quelle: Wikipedia](https://de.wikipedia.org/wiki/Rendern_%28Design%29)
