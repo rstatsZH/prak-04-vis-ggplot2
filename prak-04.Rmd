@@ -15,7 +15,6 @@ editor_options:
 ```{r}
 
 library(palmerpenguins)
-library(ggplot2)
 
 ```
 
@@ -105,23 +104,23 @@ Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit Hilfe
 1. Nutze den `penguins` Datensatz innerhalb der `ggplot()` Funktion 
 2. Ordne die Variable 'island' der x-Achse zu 
 3. Ordne die Variable 'species' einer Farbskalierung zu
+4. Nutze das 'Geom' für einen Barpot
 4. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
-7. Entferne die Legende (**Tipp:** Nutze eine Suchmaschine deiner Wahl "How to remove the legend in ggplot2 tidyverse")
 8. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst
 9. Führe den Code-chunk aus
 
-
 ```{r, eval=FALSE}
 
-ggplot(___, 
+ggplot(___ = ___,
        ___(x = ___,
            ___ = species)) +
   geom____() +
   facet_grid(___ ~ ___) +
   scale_fill_brewer(type = "qual", palette = "Set2") +
-  ___(___ = "none")
+  theme(legend.position = "none")
 
 ```
+
 
 # Änderungen speichern
 
