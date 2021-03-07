@@ -15,14 +15,17 @@ editor_options:
 ```{r}
 
 library(palmerpenguins)
+library(ggplot2)
 
 ```
 
 # Übung 1
 
-In den nächsten Code-chunks habe ich bereits Code für dich vorbereitet. Beschreibe was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
+In den nächsten Code-chunks habe ich bereits Code für dich vorbereitet. Diskutiert im Team was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
 
-**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+Der erste Schritt ist immer "Führe den Code-chunk aus". 
+
+**Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
 ```{r}
 
@@ -34,7 +37,7 @@ ggplot(data = penguins,
 
 ```
 
-**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+**Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
 ```{r}
 
@@ -46,7 +49,7 @@ ggplot(data = penguins,
 
 ```
 
-**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+**Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
 ```{r}
 
@@ -58,7 +61,7 @@ ggplot(data = penguins,
 
 ```
 
-**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+**Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
 ```{r}
 
@@ -71,7 +74,7 @@ ggplot(data = penguins,
 
 ```
 
-**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+**Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
 ```{r}
 
@@ -83,7 +86,7 @@ ggplot(data = penguins,
 
 ```
 
-**Lösche diesen Text und beschreibe was in den Plots und im Code vorgeht**
+**Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
 ```{r}
 
@@ -95,9 +98,9 @@ ggplot(data = penguins,
 
 ```
 
-# Übung 2
+# Übung 2 (Bonus)
 
-Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit meinen Anweisungen ausfüllen.
+Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit Hilfe der folgenden Anweisungen ausfüllen.
 
 1. Nutze den `penguins` Datensatz innerhalb der `ggplot()` Funktion 
 2. Ordne die Variable 'island' der x-Achse zu 
@@ -120,9 +123,25 @@ ggplot(___,
 
 ```
 
+# Änderungen speichern
 
-# Git commit / Git push 
+## Speichern + Stricken (knit)
 
-Du kannst jederzeit einen Git commit durchführen und deine Änderungen auf GitHub pushen. Mache dies spätestens am Ende dieses Praktikums nachdem du sichergestellt hast, dass deine R Markdown Datei zu einer HTML Datei rendert. 
+Du kannst deine R Markdown Datei zwischenzeitlich immer mal Dokument speichern + stricken. Ich habe es mir angewöhnt regelmässig die Tastenkombination "Cmd + S" (Mac) / "Ctrl + S" (Windows) zu nutzen. 
 
-**Hinweis:** Der Begriff Rendern (Engl. to render; zu Deutsch: Bildsynthese) bezeichnet die Erstellung einer Grafik aus Rohdaten (wie z. B. Geoinformationen) oder einer Skizze. [Quelle: Wikipedia](https://de.wikipedia.org/wiki/Rendern_%28Design%29)
+## Git commit 
+
+Wenn dein Dokument ohne Fehlermeldungen gestrickt werden kann, dann ist es hilfreich zu diesem Zeitpunkt auch einen "Git commit" zu machen. Dies sind die Versionen deines Dokuments.
+
+1. Im Ansichtsfenster oben rechts, klick auf 'Git'
+2. Setze ein Häkchen bei allen Köstchen in der Spalte 'Stages'
+3. Klick auf 'Commit' und ein neues Fenster wir sich öffnen 
+4. Füge eine Commit Nachricht hinzu
+5. Klick auf 'Commit' um die Nachricht abzuspeichern
+
+## Git push 
+
+Du brauchst nicht unbedingt nach jedem "Git commit" auch ein "Git push" machen, aber es empfiehlt sich dies spätestens am Ende dieses Praktikums zu machen nachdem du sichergestellt hast, dass deine R Markdown Datei fehlerfrei gestrickt werden kann. 
+
+1. Führe den letzten "Git commit" aller Dateien aus
+1. Klick auf 'Push' im Git Ansichtsfenster um den Status deines Projektes auf GitHub zu pushen
