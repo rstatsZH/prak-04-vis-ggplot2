@@ -22,11 +22,12 @@ library(palmerpenguins)
 
 In den nächsten Code-chunks habe ich bereits Code für dich vorbereitet. Diskutiert im Team was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
 
-Der erste Schritt ist immer "Führe den Code-chunk aus". 
+1. Führe den Code-chunk aus
+2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
-```{r}
+```{r facet-1}
 
 ggplot(data = penguins, 
        mapping = aes(x = bill_depth_mm, 
@@ -36,9 +37,12 @@ ggplot(data = penguins,
 
 ```
 
+1. Führe den Code-chunk aus
+2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
+
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
-```{r}
+```{r facet-2}
 
 ggplot(data = penguins, 
        mapping = aes(x = bill_depth_mm, 
@@ -48,9 +52,12 @@ ggplot(data = penguins,
 
 ```
 
+1. Führe den Code-chunk aus
+2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
+
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
-```{r}
+```{r facet-3}
 
 ggplot(data = penguins, 
        mapping = aes(x = bill_depth_mm, 
@@ -59,6 +66,9 @@ ggplot(data = penguins,
   facet_wrap(~ species)
 
 ```
+
+1. Führe den Code-chunk aus
+2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
@@ -73,9 +83,12 @@ ggplot(data = penguins,
 
 ```
 
+1. Führe den Code-chunk aus
+2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
+
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
-```{r}
+```{r facet-4}
 
 ggplot(data = penguins, 
        mapping = aes(x = bill_depth_mm, 
@@ -85,9 +98,12 @@ ggplot(data = penguins,
 
 ```
 
+1. Führe den Code-chunk aus
+2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
+
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
-```{r}
+```{r facet-5}
 
 ggplot(data = penguins, 
        mapping = aes(x = bill_depth_mm, 
@@ -105,15 +121,16 @@ Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit Hilfe
 2. Ordne die Variable 'island' der x-Achse zu 
 3. Ordne die Variable 'species' einer Farbskalierung zu
 4. Nutze das 'Geom' für einen Barpot
-4. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
-8. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst
-9. Führe den Code-chunk aus
+5. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
+6. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst (**Tipp:** Die Code-chunk Option sind im obersten Bereich, welcher mit den drei Backticks ``` beginnt)
+7. Führe den Code-chunk aus
+8. Falls du keine Fehlermeldung erhàlst, versuche das Dokument zu stricken ('knit')
 
-```{r, eval=FALSE}
+```{r penguins-bar-plot, eval=FALSE}
 
 ggplot(___ = ___,
-       ___(x = ___,
-           ___ = species)) +
+       mapping = ___(x = ___,
+                    ___ = species)) +
   geom____() +
   facet_grid(___ ~ ___) +
   scale_fill_brewer(type = "qual", palette = "Set2") +
@@ -143,4 +160,4 @@ Wenn dein Dokument ohne Fehlermeldungen gestrickt werden kann, dann ist es hilfr
 Du brauchst nicht unbedingt nach jedem "Git commit" auch ein "Git push" machen, aber es empfiehlt sich dies spätestens am Ende dieses Praktikums zu machen nachdem du sichergestellt hast, dass deine R Markdown Datei fehlerfrei gestrickt werden kann. 
 
 1. Führe den letzten "Git commit" aller Dateien aus
-1. Klick auf 'Push' im Git Ansichtsfenster um den Status deines Projektes auf GitHub zu pushen
+2. Klick auf 'Push' im Git Ansichtsfenster um den Status deines Projektes auf GitHub zu pushen
