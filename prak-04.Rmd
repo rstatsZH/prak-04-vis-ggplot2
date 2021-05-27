@@ -6,8 +6,6 @@ output:
   html_document: 
     toc: true
     toc_float: true
-editor_options: 
-  chunk_output_type: console
 ---
 
 # Lade Packages
@@ -15,12 +13,13 @@ editor_options:
 ```{r}
 
 library(palmerpenguins)
+library(ggplot2)
 
 ```
 
 # Übung 1
 
-In den nächsten Code-chunks habe ich bereits Code für dich vorbereitet. Diskutiert im Team was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
+In den nächsten fünf Code-chunks habe ich bereits Code für dich vorbereitet. Führe jeden Code-chunk aus indem du auf den grünen Play Button oben rechts im Code-chunk klickst. Diskutiert im Team was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
 
 1. Führe den Code-chunk aus
 2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
@@ -72,7 +71,7 @@ ggplot(data = penguins,
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
-```{r}
+```{r facet-4}
 
 ggplot(data = penguins, 
        mapping = aes(x = bill_depth_mm, 
@@ -80,21 +79,6 @@ ggplot(data = penguins,
   geom_point() +
   facet_grid(. ~ species)
 
-
-```
-
-1. Führe den Code-chunk aus
-2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
-
-**Ihr könnt diesen Text löschen und Notizen hinzufügen**
-
-```{r facet-4}
-
-ggplot(data = penguins, 
-       mapping = aes(x = bill_depth_mm, 
-                     y = bill_length_mm)) + 
-  geom_point() +
-  facet_wrap(~ species)
 
 ```
 
@@ -113,6 +97,8 @@ ggplot(data = penguins,
 
 ```
 
+🧶 ✅ ⬆️ *Knit, commit und push deine Änderungen auf GitHub mit einer Commit-Nachtricht deiner Wahl. Achte darauf, alle geänderten Dateien zu committen und zu pushen, damit dein Git-Fenster danach aufgeräumt ist.*
+
 # Übung 2 (Bonus)
 
 Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit Hilfe der folgenden Anweisungen ausfüllen.
@@ -120,24 +106,22 @@ Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit Hilfe
 1. Nutze den `penguins` Datensatz innerhalb der `ggplot()` Funktion 
 2. Ordne die Variable 'island' der x-Achse zu 
 3. Ordne die Variable 'species' einer Farbskalierung zu
-4. Nutze das 'Geom' für einen Barpot
-5. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
-6. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst (**Tipp:** Die Code-chunk Option sind im obersten Bereich, welcher mit den drei Backticks ``` beginnt)
-7. Führe den Code-chunk aus
-8. Falls du keine Fehlermeldung erhàlst, versuche das Dokument zu stricken ('knit')
+4. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
+5. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst (**Tipp:** Die Code-chunk Option sind im obersten Bereich, welcher mit den drei Backticks ``` beginnt)
+6. Führe den Code-chunk aus
+7. Falls du keine Fehlermeldung erhälst, versuche das Dokument zu stricken ('knit')
 
 ```{r penguins-bar-plot, eval=FALSE}
 
 ggplot(___ = ___,
        mapping = ___(x = ___,
                     ___ = species)) +
-  geom____() +
+  geom_bar() +
   facet_grid(___ ~ ___) +
   scale_fill_brewer(type = "qual", palette = "Set2") +
   theme(legend.position = "none")
 
 ```
-
 
 # Änderungen speichern
 
@@ -147,10 +131,10 @@ Du kannst deine R Markdown Datei zwischenzeitlich immer mal Dokument speichern +
 
 ## Git commit 
 
-Wenn dein Dokument ohne Fehlermeldungen gestrickt werden kann, dann ist es hilfreich zu diesem Zeitpunkt auch einen "Git commit" zu machen. Dies sind die Versionen deines Dokuments.
+Wenn dein Dokument ohne Fehlermeldungen gestrickt werden kann, dann ist es hilfreich zu diesem Zeitpunkt auch einen "Git commit" zu machen.
 
 1. Im Ansichtsfenster oben rechts, klick auf 'Git'
-2. Setze ein Häkchen bei allen Köstchen in der Spalte 'Stages'
+2. Setze ein Häkchen bei allen Köstchen in der Spalte 'Staged'
 3. Klick auf 'Commit' und ein neues Fenster wir sich öffnen 
 4. Füge eine Commit Nachricht hinzu
 5. Klick auf 'Commit' um die Nachricht abzuspeichern
