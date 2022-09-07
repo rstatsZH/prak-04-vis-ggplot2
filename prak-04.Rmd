@@ -66,21 +66,6 @@ ggplot(data = penguins,
 
 ```
 
-1. Führe den Code-chunk aus
-2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
-
-**Ihr könnt diesen Text löschen und Notizen hinzufügen**
-
-```{r facet-4}
-
-ggplot(data = penguins, 
-       mapping = aes(x = bill_depth_mm, 
-                     y = bill_length_mm)) + 
-  geom_point() +
-  facet_grid(. ~ species)
-
-
-```
 
 1. Führe den Code-chunk aus
 2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
