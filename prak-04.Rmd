@@ -1,6 +1,6 @@
 ---
 title: "Praktikum 04"
-name: "Füge deinen Namen hizu"
+name: "Füge deinen Namen hinzu"
 date: "Füge ein Datum hinzu"
 output: 
   html_document: 
@@ -21,10 +21,10 @@ library(ggplot2)
 
 # Übung 1
 
-In den nächsten fünf Code-chunks habe ich bereits Code für dich vorbereitet. Führe jeden Code-chunk aus indem du auf den grünen Play Button oben rechts im Code-chunk klickst. Diskutiert im Team was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
+In den nächsten fünf Code-chunks habe ich bereits Code für dich vorbereitet. Führe jeden Code-chunk aus, indem du auf den grünen Play Button oben rechts im Code-chunk klickst. Diskutiert im Team, was in den Plots vorgeht und wie der Code in Beziehung zum Output steht.
 
-1. Führe den Code-chunk aus
-2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
+1. Führe den Code-chunk aus.
+2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht.
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
@@ -38,8 +38,8 @@ ggplot(data = penguins,
 
 ```
 
-1. Führe den Code-chunk aus
-2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht
+1. Führe den Code-chunk aus.
+2. Diskutiert wie der Code auf der Zeile mit `facet_grid()` im Zusammenhang mit dem Plot steht.
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
@@ -53,8 +53,8 @@ ggplot(data = penguins,
 
 ```
 
-1. Führe den Code-chunk aus
-2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
+1. Führe den Code-chunk aus.
+2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht.
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
@@ -69,8 +69,8 @@ ggplot(data = penguins,
 ```
 
 
-1. Führe den Code-chunk aus
-2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht
+1. Führe den Code-chunk aus.
+2. Diskutiert wie der Code auf der Zeile mit `facet_wrap()` im Zusammenhang mit dem Plot steht.
 
 **Ihr könnt diesen Text löschen und Notizen hinzufügen**
 
@@ -90,13 +90,13 @@ ggplot(data = penguins,
 
 Im unten stehenden Code sind Lücken gelassen. Du sollst diese Lücken mit Hilfe der folgenden Anweisungen ausfüllen.
 
-1. Nutze den `penguins` Datensatz innerhalb der `ggplot()` Funktion 
-2. Ordne die Variable 'island' der x-Achse zu 
-3. Ordne die Variable 'species' einer Farbskalierung zu
-4. Nutze Faceting und lege die Variable 'sex' auf die Reihen und die Variable 'species' auf die Spalten
-5. In code Code-chunk Optionen, setze `eval` auf `TRUE` in dem du `FALSE` überschreibst (**Tipp:** Die Code-chunk Option sind im obersten Bereich, welcher mit den drei Backticks ``` beginnt)
-6. Führe den Code-chunk aus
-7. Falls du keine Fehlermeldung erhälst, versuche das Dokument zu stricken ('knit')
+1. Nutze den `penguins` Datensatz innerhalb der `ggplot()` Funktion.
+2. Ordne die Variable `island` der x-Achse zu.
+3. Ordne die Variable `species` einer Farbskalierung zu.
+4. Nutze Facetting und lege die Variable `sex` auf die Reihen und die Variable `species` auf die Spalten.
+5. In den Code-chunk-Optionen, setze `eval` auf `TRUE`, indem du `FALSE` überschreibst (**Tipp:** Die Code-chunk Optionen sind im obersten Bereich, welcher mit den drei Backticks ``` beginnt).
+6. Führe den Code-chunk aus.
+7. Falls du keine Fehlermeldung erhälst, versuche das Dokument zu stricken (`Knit`)
 
 ```{r penguins-bar-plot, eval=FALSE}
 
@@ -112,23 +112,23 @@ ggplot(___ = ___,
 
 # Änderungen speichern
 
-## Speichern + Stricken (knit)
+## Speichern + Stricken (`Knit`)
 
-Du kannst deine R Markdown Datei zwischenzeitlich immer mal Dokument speichern + stricken. Ich habe es mir angewöhnt regelmässig die Tastenkombination "Cmd + S" (Mac) / "Ctrl + S" (Windows) zu nutzen. 
+Du kannst deine R Markdown Datei zwischenzeitlich immer mal Dokument speichern + stricken. Ich habe es mir angewöhnt, regelmässig die Tastenkombination `Cmd + S` (Mac) / `Ctrl + S` (Windows) zu nutzen. 
 
 ## Git commit 
 
-Wenn dein Dokument ohne Fehlermeldungen gestrickt werden kann, dann ist es hilfreich zu diesem Zeitpunkt auch einen "Git commit" zu machen.
+Wenn dein Dokument ohne Fehlermeldungen gestrickt werden kann, dann ist es hilfreich zu diesem Zeitpunkt auch einen `Git commit` zu machen.
 
-1. Im Ansichtsfenster oben rechts, klick auf 'Git'
-2. Setze ein Häkchen bei allen Köstchen in der Spalte 'Staged'
-3. Klick auf 'Commit' und ein neues Fenster wir sich öffnen 
-4. Füge eine Commit Nachricht hinzu
-5. Klick auf 'Commit' um die Nachricht abzuspeichern
+1. Im Ansichtsfenster oben rechts, klick auf `Git`.
+2. Setze ein Häkchen bei allen Köstchen in der Spalte `Staged`.
+3. Klick auf `Commit` und ein neues Fenster wird sich öffnen.
+4. Füge eine Commit-Nachricht hinzu.
+5. Klick auf `Commit`, um die Nachricht abzuspeichern.
 
 ## Git push 
 
-Du brauchst nicht unbedingt nach jedem "Git commit" auch ein "Git push" machen, aber es empfiehlt sich dies spätestens am Ende dieses Praktikums zu machen nachdem du sichergestellt hast, dass deine R Markdown Datei fehlerfrei gestrickt werden kann. 
+Du brauchst nicht unbedingt nach jedem `Git commit` auch ein `Git push` machen, aber es empfiehlt sich, dies spätestens am Ende dieses Praktikums zu machen, nachdem du sichergestellt hast, dass deine R Markdown Datei fehlerfrei gestrickt werden kann. 
 
-1. Führe den letzten "Git commit" aller Dateien aus
-2. Klick auf 'Push' im Git Ansichtsfenster um den Status deines Projektes auf GitHub zu pushen
+1. Führe den letzten `Git commit` aller Dateien aus.
+2. Klick auf `Push` im Git-Ansichtsfenster, um den Status deines Projektes auf GitHub zu pushen.
